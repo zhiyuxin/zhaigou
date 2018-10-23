@@ -1,0 +1,125 @@
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 0.12rem;
+    width: 100%;
+    max-width: 7.5rem;
+    min-width: 3.2rem;
+    margin: 0 auto;
+    /*overflow: hidden;*/
+}
+.clearfix::before,
+.clearfix::after{
+    content: '.';
+    height: 0;
+    line-height: 0;
+    display: block; /*出错点*/
+    visibility: hidden;
+    clear: both;
+}
+/*公用*/
+hr{
+    width: 90%;
+    height: 0.02rem;
+    background-color: #D7D8D8;
+    border: none;
+    margin: 0 5% 0 5%;
+}
+
+/*底部*/
+.foot{
+    position: fixed;
+    bottom: 0;
+    width: 7.5rem;
+    height: 1rem;
+    background-color: #fff;
+    box-shadow: 0 -0.01rem 0.05rem #888888;
+    -webkit-transform: translateZ(0);/*防止fixed滑动时抖动*/
+    z-index: 2;
+}
+.foot ul{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.foot ul li{
+    float: left;
+    width: 20%;
+}
+.foot ul li:nth-child(3) a{
+    display: block;
+}
+.foot ul li:nth-child(3) img{
+    /*width: 100%;*/
+    /*margin-top: -0.8rem;*/
+    width: 100%;
+    /* margin-top: -0.8rem; */
+    /* margin-right: 5.5rem; */
+    position: relative;
+    bottom: 0.9rem;
+    /*left: -0.1rem;*/
+    display: inherit;
+}
+.foot ul li a{
+    display: block;
+}
+.foot ul li img{
+    width: 40%;
+    padding-top: 0.13rem;
+}
+.foot ul li span{
+    display: block;
+    font-size: 0.22rem;
+    /*position: absolute;*/
+    /*margin-left: 0.4rem;*/
+}
+.foot ul li .active{
+    color: #24b9f1;
+}
+a {
+    color: #000;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+a,a:hover,a:active,a:visited,a:link,a:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
+}
+::selection {
+    background: #FFF;
+    color: #333;
+}
+::-moz-selection {
+    background: #FFF;
+    color: #333;
+}
+img {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+input::-webkit-input-placeholder{
+    color:#ccc;
+}
+input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+    color:#ccc;
+}
+input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+    color:#ccc;
+}
+input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+    color:#ccc;
+}
+input::-webkit-search-cancel-button{
+    display: none;
+}
+input[type=search]::-ms-clear{
+    display: none;
+}

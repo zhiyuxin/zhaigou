@@ -1,0 +1,32 @@
+.content {
+    width: 100%;
+    height: 12.18rem;
+    /*padding-top: 1.49rem;*/
+    position: relative;
+    background-color: #f9f9f9f9;
+    overflow: hidden;
+}
+.content .prod{
+    width: 90%;
+    height: 3.50rem;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    padding: 0.2rem 0.47rem 0 0.47rem;
+    margin: 0.24rem 0 0 0;
+    font-size: 0.27rem;
+}
+.content .number{
+    float: right;
+    margin: 0.3rem 0.3rem 0 0;
+}
+.content .submit{
+    width: 100%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    padding-left: 0.47rem;
+    margin: 1rem 0 0 0;
+    font-size: 0.27rem;
+    color: #fff;
+    background-color: #0A8CD7;
+}

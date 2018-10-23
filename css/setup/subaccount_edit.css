@@ -1,0 +1,105 @@
+.content{
+    width: 100%;
+    height: 13.34rem;
+    position: relative;
+    background-color: #F9F9F9;
+}
+/*公共*/
+
+.content .comm{
+    display: block;
+    font-size: 0.32rem;
+    color: #000;
+    padding-left: 0.46rem;
+}
+.content .comm .right {
+    float: right;
+    vertical-align: middle;
+    margin: 0.3rem 0.25rem 0 0;
+}
+
+/*编辑子账户*/
+.content .subaccountname,.pronum,.pwd,.deladdr{
+    height: 0.98rem;
+    line-height: 0.98rem;
+    background-color: #fff;
+    margin-bottom: 0.1rem;
+}
+.content .deladdr{
+    text-align: center;
+}
+.content .deladdr a{
+    display: block;
+}
+.content .deladdr img{
+    width: 0.29rem;
+    height: 0.29rem;
+    vertical-align: middle;
+}
+.content .deladdr label{
+    vertical-align: middle;
+    color: red;
+}
+.content .submit {
+    color: #fff;
+    background-color: #0A8CD7;
+    width: 100%;
+    height: 0.88rem;
+    line-height: 0.88rem;
+    padding: 0 0.47rem 0 0.47rem;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 0.3rem;
+}
+.content .name{
+    margin-left: 0.73rem;
+    width: 60%;
+}
+.content .num{
+    margin-left: 1rem;
+    width: 60%;
+}
+.content .password{
+    margin-left: 1.65rem;
+    width: 60%;
+}
+#mask1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+#mask1 div {
+    width: 70%;
+    height: 2.83rem;
+    margin: 3.97rem 15% 0 15%;
+    background-color: #fff;
+    z-index: 999;
+    letter-spacing: 0.02rem;
+    text-align: center;
+    position: relative;
+}
+#mask1 div .fp {
+    font-size: 0.33rem;
+    padding: 0.26rem 1rem 0.19rem 1rem;
+    position: relative;
+}
+#mask1 div img {
+    position: absolute;
+    right: 0.4rem;
+    top: 0.25rem;
+}
+#mask1 div .ask {
+    font-size: 0.23rem;
+    padding: 0.4rem 0 0.3rem 0;
+}
+#mask1 div button {
+    width: 1.2rem;
+    height: 0.52rem;
+    font-size: 0.33rem;
+    background-color: #0084FF;
+    color: #fff;
+    font-weight: bold;
+}

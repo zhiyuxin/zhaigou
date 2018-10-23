@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>发布项目</title>
+    <link rel="stylesheet" href="css/comm/reset.css">
+    <link rel="stylesheet" href="css/comm/comm.css">
+    <link rel="stylesheet" href="css/relpro_ent.css">
+    <script type="text/javascript" src="js/area.js"></script>
+    <script type="text/javascript">
+        var Gid  = document.getElementById ;
+        var showArea = function(){
+            Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +
+                Gid('s_city').value + " - 县/区" +
+                Gid('s_county').value + "</h3>"
+        }
+        Gid('s_county').setAttribute('onchange','showArea()');
+    </script>
+</head>
+<body>
+<div class="content">
+    <div class="protop">
+        <span>添加房源</span>
+    </div>
+    <form action="" method="" >
+        <div class="procenter">
+            <div class="title">
+                <span>信息标题：</span>
+                <input type="text" maxlength="30">
+            </div>
+            <div class="msg">
+                <span>装修风格：</span>
+                <input type="text" maxlength="30">
+            </div>
+            <div class="add">
+                <span>所属区域：</span>
+                    <p>
+                        <select id="s_province" name="s_province"></select>&nbsp;&nbsp;
+                        <select id="s_city" name="s_city" ></select>&nbsp;&nbsp;
+                        <select id="s_county" name="s_county"></select>
+                    </p>
+                    <p id="show"></p>
+            </div>
+            <div class="adddet">
+                <span>详细地址：</span>
+                <input type="text" maxlength="30">
+            </div>
+            <div class="fangx">
+                <span>房型：</span>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">一</option>
+                    <option value="">二</option>
+                    <option value="">三</option>
+                    <option value="">四</option>
+                    <option value="">五</option>
+                </select>&nbsp;&nbsp;室&nbsp;
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">一</option>
+                    <option value="">二</option>
+                    <option value="">三</option>
+                    <option value="">四</option>
+                    <option value="">五</option>
+                </select>&nbsp;&nbsp;厅&nbsp;
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">一</option>
+                    <option value="">二</option>
+                    <option value="">三</option>
+                    <option value="">四</option>
+                    <option value="">五</option>
+                </select>&nbsp;&nbsp;卫
+            </div>
+            <div class="louc">
+                <span>楼层：</span>
+                <input type="text" maxlength="30">&nbsp;&nbsp;层&nbsp;&nbsp;
+                共&nbsp;&nbsp;<input type="text" maxlength="30">&nbsp;&nbsp;层
+            </div>
+            <div class="mianj">
+                <span>建筑面积：</span>
+                <input type="text" maxlength="30">&nbsp;&nbsp;米²
+            </div>
+            <div class="jiag">
+                <span>装修总价： </span>
+                <input type="text" maxlength="30">&nbsp;&nbsp;元
+            </div>
+            <div class="">
+                <span>楼盘名称：</span>
+                <input type="text" maxlength="30">
+            </div>
+            <div class="lianxr">
+                <span>联系人：</span>
+                <input type="text" maxlength="30">
+            </div>
+            <div class="tel">
+                <span>联系电话：</span>
+                <input type="text" maxlength="30">
+            </div>
+            <div class="fuk">
+                <span>项目分类： </span>
+                <select name="" id="">
+                    <option value="">项目进行中</option>
+                </select>
+            </div>
+            <div class="zxcd">
+                <span>装修程度： </span>
+                <select name=""  class="group">
+                    <option value="">设计</option>
+                    <option value="自定义">自定义</option>
+                </select>
+            </div>
+            <div class="recomm">
+                <input type="checkbox">
+                <label>推荐到首页</label>
+            </div>
+            <div class="qjimg">
+                <ul class="img_div"></ul>
+                <ul>
+                    <li>
+                        <div class="up">
+                            <!--<input type="file" class="file">本地上传全景图-->
+                            <input type="file" name="myFile" class="file" id="myFile" multiple="multiple"/>本地上传全景图
+                        </div>
+                    </li>
+                    <li><a href="choiceqj.html">素材库选择全景图</a></li>
+                </ul>
+            </div>
+            <div class="agree">
+                <input type="checkbox"><a href="#">我已阅读《使用协议》</a>
+            </div>
+            <div class="submit">
+                <input type="button" value="确定发布">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="mask1">
+    <div>
+        <p class="fp">创建分组</p>
+        <img src="img/mypro/confirmcol.png" alt="" class="close">
+        <input type="text"><br>
+        <button class="btn">确定</button>
+    </div>
+</div>
+
+<div class="foot">
+    <ul>
+        <li><a href="myshop.html"><img src="img/icon/home.png" alt=""><span>我的微店</span></a></li>
+        <li><a href="mypro.html"><img src="img/icon/project.png" alt=""><span>我的项目</span></a></li>
+        <li><a href="relpro_ent.html"><img src="img/icon/footimg01_c.png" alt=""></a></li>
+        <li><a href="sourcecenter.html"><img src="img/icon/data.png" alt=""><span>素材中心</span></a></li>
+        <li><a href="percenter.html"><img src="img/icon/center.png" alt=""><span>个人中心</span></a></li>
+    </ul>
+</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/relpro.js"></script>
+<script type="text/javascript">_init_area();</script>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+</body>
+</html>

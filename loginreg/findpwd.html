@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>找回密码</title>
+    <link rel="stylesheet" href="../css/comm/reset.css">
+    <link rel="stylesheet" href="../css/comm/comm.css">
+    <link rel="stylesheet" href="../css/loginreg/findpwd.css">
+</head>
+<body>
+    <div class="content">
+        <div class="mask">
+            <div class="log"></div>
+            <form action="login.html" method="" onsubmit="return false"><!--onsubmit="return false"-->
+                <div class="login_form">
+                    <div class="login_row" id="name">
+                        <label><img src="../img/loginreg/user.png" alt=""></label>
+                        <input type="text" id="tel" class="login_input name" placeholder="请输入手机号码">
+                        <input type="button" class="code" value="获取验证码" onclick="settime(this);">
+                    </div>
+                    <div class="login_row" id="vcode">
+                        <label><img src="../img/loginreg/code.png" alt=""></label>
+                        <input type="text" id="code" class="login_input pass" placeholder="请输入验证码">
+                    </div>
+                    <div class="login_row" id="password">
+                        <label><img src="../img/loginreg/pass.png" alt=""></label>
+                        <input type="password" id="pwd" class="login_input pass" placeholder="请输入新密码">
+                    </div>
+                    <div class="login_row" id="confirmpassword">
+                        <label><img src="../img/loginreg/pass.png" alt=""></label>
+                        <input type="password" id="confirmpwd" class="login_input pass" placeholder="请再次输入新密码">
+                    </div>
+
+                    <!--<button type="button" class="login_submit" id="submit">提交</button>-->
+                    <input type="submit" id="submit" class="login_submit" value="提交">
+                </div>
+            </form>
+        </div>
+        <div id="mask1">
+            <div>
+                <p id="tips"></p>
+                <hr />
+                <button id="btn">确定</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/findpwd.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+.content{
+    width: 100%;
+    height: 18.1rem;
+    /*padding-top: 1.49rem;*/
+    position: relative;
+    background-color: #F9F9F9;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.content .top{
+    width: 100%;
+    height: 0.73rem;
+    background-color: #fff;
+}
+.content .top ul{
+    width: 100%;
+    height: 100%;
+}
+.content .top ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-top: 0.38rem;
+    font-size: 0.28rem;
+}
+.activeem{
+    width: 1.29rem;
+    color: #4384EA!important;
+    border-bottom: 0.03rem solid #4384EA;
+
+}
+
+.content .up{
+    display: inline-block;
+    position: relative;
+    margin: 0.29rem 0.22rem;
+    overflow: hidden;
+    color: #fff;
+    background-color: #FF5500;
+    padding: 0.08rem 0.22rem;
+    font-size: 0.28rem;
+}
+.content .del{
+    display: inline-block;
+    position: absolute;
+    left: 4.42rem;
+    top: 1.1rem;
+    font-size: 0.26rem;
+}
+
+.content .del .buttonup{
+    color: #fff;
+    background-color: #FF5500;
+    padding: 0.08rem 0.22rem;
+    font-size: 0.28rem;
+    position: absolute;
+    left: 1.68rem;
+    top: -0.08rem;
+}
+.content .up .file{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    outline: none;
+    background-color: transparent;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+/*公用样式——input大小*/
+input[type=checkbox]{
+    zoom: 100%;
+}
+.content .comm{
+    width: 96%;
+    height: auto;
+    margin: 0 2% 0 1%;
+    padding: 0!important;
+    /*border: 0.01rem solid #979797;*/
+    position: relative;
+}
+/*视频素材*/
+.content .ship{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.content .ship .video .video_div{
+    text-align: center;
+    /*overflow: hidden;*/
+    height: 100%;
+    background: url(../img/relpro/relprobgc.jpg)no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-position-y: 0.01rem;
+    /*padding-top: 1.5%;*/
+}
+.content .isvideo{
+    display: inline-block;
+    /*width: 3.43rem;*/
+    /*height: 1.71rem;*/
+    width: 100%;
+    height: 100%;
+    /*padding: 1%;*/
+    position: relative;
+}
+.content .isimg{
+    display: inline-block;
+    width: 3.43rem;
+    height: 1.71rem;
+    padding: 1%;
+    position: relative;
+    background: url("../img/relpro/loading.gif")no-repeat center;
+}
+.content .isaudio{
+    display: inline-block;
+    width: 3.43rem;
+    height: 1.71rem;
+    padding: 1%;
+    position: relative;
+}
+.content .ispanimg{
+    display: inline-block;
+    width: 3.43rem;
+    height: 1.71rem;
+    padding: 1%;
+    position: relative;
+    background: url("../img/relpro/loading.gif")no-repeat center;
+}
+.content .removeBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 11;
+    border: 0;
+    border-radius: 0.5rem;
+    background: transparent;
+    width: 0.5rem;
+    height: 0.5rem;
+    font-size: 0.4rem;
+    color: red;
+}
+.content .ship .video .video_div .isImg .removeBtn{
+    position: absolute;
+    top: 0;
+    right: 0.15rem;
+    z-index: 11;
+    border: 0;
+    border-radius: 0.5rem;
+    background: transparent;
+    width: 0.5rem;
+    height: 0.5rem;
+    font-size: 0.4rem;
+    color: red;
+    z-index: 1;
+}
+/*图片素材*/
+.content .tupi{
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+.content .tupi .img .img_div{
+    text-align: center;
+    overflow: hidden;
+    height: 3.55rem;
+    background: url(../img/relpro/relprobgc.jpg)no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-position-y: 0.01rem;
+    /* padding-top: 1.5%; */
+}
+/*音频素材*/
+.content .yinp{
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+.content .yinp .audio .audio_div{
+    text-align: center;
+    overflow: hidden;
+    height: 3.55rem;
+    background-color: #fff;
+    border: 0.01rem solid #ccc;
+}
+.content .yinp .audio .audio_div .isImg{
+    display: inline-block;
+    width: 3.43rem;
+    height: auto;!important;
+    padding-left: 1%;
+    position: relative;
+}
+/*全景图片*/
+.content .quanji{
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+.content .quanji .panimg .panimg_div{
+    text-align: center;
+    overflow: hidden;
+    height: 3.55rem;
+    background: url(../img/relpro/relprobgc.jpg)no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-position-y: 0.01rem;
+    /* padding-top: 1.5%; */
+}

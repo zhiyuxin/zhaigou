@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>介绍</title>
+    <link rel="stylesheet" href="../css/comm/reset.css">
+    <link rel="stylesheet" href="../css/comm/comm.css">
+    <link rel="stylesheet" href="../css/setup/setprod.css">
+</head>
+<body>
+<div class="content">
+    <form action="">
+        <textarea class="prod" onkeyup="wordStatic(this);" maxlength="300" placeholder="请输入介绍"></textarea>
+        <div class="number"><span id="num">0</span>/300</div>
+        <input type="submit" class="submit" value="保存">
+    </form>
+</div>
+<script>
+    function wordStatic(input) {
+        // 获取要显示已经输入字数文本框对象
+        var content = document.getElementById('num');
+        if (content && input) {
+            // 获取输入框输入内容长度并更新到界面
+            var value = input.value;
+            // 将换行符不计算为单词数
+            value = value.replace(/\n|\r/gi, "");
+            // 更新计数
+            content.innerText = value.length;
+        }
+    }
+</script>
+
+
+<script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+.content{
+    width: 100%;
+    height: 11.85rem;
+    /*padding-top: 1.49rem;*/
+    position: relative;
+    background-color: #1f1f22;
+}
+.content .top{
+    width: 100%;
+    height: 2.69rem;
+    background-color: #1F1F21;
+}
+.content .up{
+    display: inline-block;
+    position: relative;
+    margin: 0.29rem 0.22rem;
+    overflow: hidden;
+    color: #fff;
+    /*background-color: #FF5500;*/
+    padding: 0.08rem 0.22rem;
+    font-size: 0.28rem;
+    float: right;
+}
+.content .up .btn{
+    background-color: transparent;
+    color: #fff;
+}
+.content .center{
+    width: 100%;
+    height: 3.75rem;
+    overflow: hidden;
+    background-color: #fff;
+    /*background: url(../../img/setbgc/centerimg.jpg)no-repeat center;
+   	background-size: contain;*/
+}
+.content .center img{
+    width: 100%;
+}
+.content .bottom{
+    width: 100%;
+    height: 2.72rem;
+    background-color: #1F1F21;
+}
+.mask {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-transform: translateZ(0);//防止fixed滑动时抖动
+}
+.mask .down{
+    width: 100%;
+    height: 3.15rem;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.mask .photo{
+	background-color: transparent!important;
+}
+.mask .down .photo, .album, .cancel{
+    text-align: center;
+    width: 100%;
+    height: 1.04rem;
+    line-height: 1.04rem;
+    font-size: 0.3rem;
+    letter-spacing: 0.03rem;
+    background-color: rgba(249, 240, 240, 092);
+}
+.mask .down .album{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+    background-color: rgba(249, 240, 240, 092);
+    font-size: 0.3rem;
+    margin: 0.02rem 0 0.06rem 0;
+}
+.mask .down .album .file {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    outline: none;
+    background-color: transparent;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>项目详情</title>
+    <link rel="stylesheet" href="css/comm/reset.css">
+    <link rel="stylesheet" href="css/comm/comm.css">
+    <link rel="stylesheet" href="css/prodetails.css">
+</head>
+<body>
+    <div class="content">
+        <!--<div class="top"><img src="img/prodetails/topimg01.png" alt=""></div>-->
+        <!--轮播图-->
+        <div class="banner">
+            <ul class="clearfix">
+                <li><a href="#"><img src="img/banner2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/prodetails/topimg01.png" alt=""></a></li>
+                <li><a href="#"><img src="img/banner2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="img/prodetails/topimg01.png" alt=""></a></li>
+
+            </ul>
+            <ul>
+                <li class="now"></li>
+                <li class=""></li>
+            </ul>
+        </div>
+        <div class="center1">
+            <h1>整套出租 | 九月华城小区</h1>
+            <p>1室1厅1卫 | 50m² | 朝南 | 1/5层</p>
+            <p>2000元/月</p>
+        </div>
+        <div class="center2">
+            <ul>
+                <li>
+                    <img class="head" src="img/prodetails/center2img01.png" alt="">
+                </li>
+                <li>
+                    <h1 class="h1">美丽的房子</h1>
+                    <p class="p">个人房源</p>
+                </li>
+                <li>
+                    <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=此处填写QQ号码&amp;site=qq&amp;menu=yes">
+                        <img class="chat" src="img/prodetails/center2img02.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom1">
+            <div class="top">
+                <h1>地址：丰禾路 鸵鸟王大厦 九月华城</h1>
+            </div>
+        </div>
+        <div class="bottom2">
+            <div class="top">
+                <h1>配套设施</h1>
+                <ul>
+                    <li><div class="check"></div><img src="img/prodetails/bottom2img.png" alt="">电视</li>
+                    <li><div class="check"></div>空调</li>
+                    <li><div class="check"></div>冰箱</li>
+                    <li><div class="check"></div>洗衣机</li>
+                    <li><div class="check"></div>宽带</li>
+                    <li><div class="check"></div>地砖</li>
+                    <li><div class="check"></div>床</li>
+                    <li><div class="check"></div>热水器</li>
+                    <li><div class="check"></div>木地板</li>
+                    <li><div class="check"></div>水泥地</li>
+                    <li><div class="check"></div>地毯</li>
+                    <li><div class="check"></div>衣柜</li>
+                    <li><div class="check"></div>油烟机</li>
+                    <li><div class="check"></div>茶几</li>
+                    <li><div class="check"></div>燃气灶</li>
+                    <li><div class="check"></div>沙发</li>
+                    <li><div class="check"></div>餐桌</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <ul>
+            <li><a href="tel:此处填写电话号码"><img class="myproimg" src="img/prodetails/footimg01.png" alt=""></a></li>
+            <li><a href="#" class="house">720°全景观房</a></li>
+            <li><a href="#" class="reserve" id="reserve">预定</a></li>
+        </ul>
+    </div>
+    <div id="mask1">
+        <div>
+            <p class="fp">请填写预约信息</p>
+            <img src="img/mypro/confirmcol.png" id="close" alt="">
+            <form action="">
+                <input type="text" value="" placeholder="请输入您的姓名">
+                <input type="text" value="" placeholder="请输入您的电话">
+                <input type="text" value="" placeholder="请输入您的微信、QQ">
+                <input type="date" value=""/>
+                <button id="btn">确定</button>
+            </form>
+
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            //banner
+            banner();
+          var reserve = document.getElementById('reserve');
+          var btn = document.getElementById('btn');
+          var close = document.getElementById('close');
+            reserve.onclick = function () {
+                mask1.style.display = 'block';
+          };
+            close.onclick = function () {
+              mask1.style.display = 'none';
+          }
+        };
+        //banner轮播
+        var banner = function () {
+            var banner = document.querySelector('.banner');
+            var width = banner.offsetWidth;
+            //图片容器
+            var imageBox = banner.querySelector('ul:first-child');
+            //点容器
+            var pointBox = banner.querySelector('ul:last-child');
+            //所有的点
+            var points = pointBox.querySelectorAll('li');
+
+            //公用方法
+            //加过渡
+            var addTransition = function () {
+                imageBox.style.transition = 'all 0.2s';
+                imageBox.style.webkitTransition = 'all 0.2s';
+            }
+            //清过渡
+            var removeTransition = function () {
+                imageBox.style.transition = 'null';
+                imageBox.style.webkitTransition = 'null';
+            }
+            //设置位移
+            var setTranslateX = function (translate) {
+                imageBox.style.transform = 'translateX(' + translate + 'px)';
+                imageBox.style.webkitTransform = 'translateX(' + translate + 'px)';
+            }
+
+            var index = 1; //当前索引为1
+            var timer = setInterval(function () {
+                index++;
+                addTransition();
+                setTranslateX(-index * width);
+
+            }, 1000);
+
+            imageBox.addEventListener('transitionend', function () {
+                if (index >= 3) {
+                    index = 1;
+                    //清除过度
+                    removeTransition();
+                    //定位
+                    setTranslateX(-index * width);
+                } else if (index <= 0) {
+                    index = 3;
+                    removeTransition();
+                    setTranslateX(-index * width);
+                }
+                setPoint();
+            });
+
+            var setPoint = function () {
+                for (var i = 0; i < points.length; i++) {
+                    points[i].classList.remove('now');
+                }
+                points[index - 1].classList.add('now');
+            }
+        }
+    </script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

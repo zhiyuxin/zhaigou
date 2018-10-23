@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>头像</title>
+    <link rel="stylesheet" href="../css/comm/reset.css">
+    <link rel="stylesheet" href="../css/comm/comm.css">
+    <link rel="stylesheet" href="../css/setup/sethead.css">
+</head>
+<body>
+
+<div class="content">
+    <div class="top">
+        <div class="up">
+            <input type="button" class="btn" value="上传">
+        </div>
+    </div>
+    <div class="center" id="headimg"></div>
+    <div class="bottom"></div>
+</div>
+<div class="mask" id="mask">
+    <div class="down">
+        <!--<div class="photo">拍照</div>-->
+        <div class="photo"></div>
+        <div class="album"><input type="file" class="file" name="file" id="doc" multiple="multiple"
+                                  onchange="javascript:setImagePreviews();" accept="image/*"/>拍照或选择图片
+        </div>
+        <div class="cancel">退出</div>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        var headimg = document.getElementById('headimg');
+        var mask = document.getElementById('mask');
+        var doc = document.getElementById('doc');
+        var cancel = document.getElementsByClassName('cancel')[0];
+        headimg.onclick = function () {
+            mask.style.display = 'block';
+        };
+        doc.onclick = function () {
+            mask.style.display = 'none';
+        };
+        cancel.onclick = function () {
+            mask.style.display = 'none';
+            location.href = 'setup.html';
+        };
+    };
+
+    //下面用于多图片上传预览功能
+    function setImagePreviews(avalue) {
+        var docObj = document.getElementById("doc");
+        var headimg = document.getElementById("headimg");
+        headimg.innerHTML = "";
+        var fileList = docObj.files;
+        for (var i = 0; i < fileList.length; i++) {
+            headimg.innerHTML += "<div> <img id='img" + i + "' /> </div>";
+            var imgObjPreview = document.getElementById("img" + i);
+            if (docObj.files && docObj.files[i]) {
+                //火狐下，直接设img属性
+                imgObjPreview.style.display = 'block';
+                imgObjPreview.style.width = '100%';
+                imgObjPreview.style.height = '7.5rem';
+
+                //火狐7以上版本不能用上面的getAsDataURL()方式获取，需要一下方式
+                imgObjPreview.src = window.URL.createObjectURL(docObj.files[i]);
+            } else {
+                //IE下，使用滤镜
+                docObj.select();
+                var imgSrc = document.selection.createRange().text;
+                alert(imgSrc)
+                var localImagId = document.getElementById("img" + i);
+                //必须设置初始大小
+                localImagId.style.width = "100%";
+                localImagId.style.height = "7.5rem";
+                //图片异常的捕捉，防止用户修改后缀来伪造图片
+                try {
+                    localImagId.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";
+                    localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;
+                } catch (e) {
+                    alert("您上传的图片格式不正确，请重新选择!");
+                    return false;
+                }
+                imgObjPreview.style.display = 'none';
+                document.selection.empty();
+            }
+        }
+        return true;
+    }
+</script>
+
+<script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>

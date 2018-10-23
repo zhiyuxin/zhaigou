@@ -1,0 +1,50 @@
+/*fixheader*/
+.fix_head .center{
+    margin: 0.7rem 0 0 1.5rem;
+}
+.content{
+    width: 100%;
+    height: auto;
+    padding-top: 1.49rem;
+    position: relative;
+    background-color: #f9f9f9;
+}
+.content .top{
+    width: 100%;
+    height: 3.75rem;
+    background-color: #C0C0C0;
+}
+.content .topimg{
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    left: 2.87rem;
+    top: 5.5rem;
+}
+.content .bottom{
+    width: 100%;
+    height: 10.74rem;
+    padding-top: 2.4rem;
+    text-align: center;
+    font-size: 0.31rem;
+}
+.content .bottom p{
+    padding-bottom: 0.37rem;
+}
+.content .bottom a{
+    width: 2.07rem;
+    height: 0.33rem;
+    background-color: #23B8F0;
+    padding: 0.11rem 0.69rem;
+    color: #fff;
+}
+.content .bottom img{
+    border-radius: 100%;
+    width: 3.37rem;
+    height: 3.43rem;
+    position: absolute;
+    left: 2.08rem;
+    top: 9.2rem;
+}

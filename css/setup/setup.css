@@ -1,0 +1,112 @@
+.content{
+    width: 100%;
+    height: auto;
+    /*padding-top: 1.49rem;*/
+    padding-bottom: 1rem;
+    position: relative;
+    background-color: #F9F9F9;
+}
+/*公共*/
+.content .comm{
+    width: 100%;
+    background-color: #fff;
+}
+.content .comm a{
+    display: block;
+    font-size: 0.32rem;
+    color: #000;
+    padding-left: 0.46rem;
+}
+.content .comm .right {
+    float: right;
+    vertical-align: middle;
+    margin: 0.3rem 0.25rem 0 0;
+}
+.content span{
+    padding-left: 30%;
+    width: auto;
+    display: inline-block;
+    line-height: 0.98rem;
+}
+/*头像*/
+.content .head{
+    height: 1.8rem;
+    line-height: 1.8rem;
+    padding-top: 0.26rem;
+
+}
+.content .head a .headimg{
+    width: 1.45rem;
+    height: 1.45rem;
+    vertical-align: middle;
+    padding-left: 4rem;
+}
+.content .head .headeright {
+    float: right;
+    vertical-align: middle;
+    margin: 0.7rem 0.20rem 0 0;
+}
+/*名称*/
+.content .name{
+    height: 0.98rem;
+    line-height: 0.98rem;
+    margin-top: 0.07rem;
+}
+/*介绍*/
+.content .prod{
+    height: 0.98rem;
+    line-height: 0.98rem;
+    margin-top: 0.07rem;
+}
+
+/*背景图*/
+.content .bgc{
+    height: 0.98rem;
+    line-height: 0.98rem;
+    margin-top: 0.07rem;
+}
+/*.content .bgc span{*/
+    /*padding-left: 36%;*/
+/*}*/
+/*电话*/
+.content .tel{
+    height: 0.98rem;
+    line-height: 0.98rem;
+    margin-top: 0.64rem;
+}
+.content .tel span{
+    padding: 0.04rem 0 0 30%
+}
+
+/*QQ*/
+.content .qq{
+    height: 0.98rem;
+    line-height: 0.98rem;
+    margin-top: 0.07rem;
+}
+/*微信*/
+.content .wx{
+    height: 0.98rem;
+    line-height: 0.98rem;
+    margin-top: 0.07rem;
+}
+/*修改电话*/
+.content .changetel{
+    height: 0.98rem;
+    line-height: 0.98rem;
+    margin-top: 0.64rem;
+}
+.content .changetel span{
+    padding-left: 32%;
+}
+/*退出登录*/
+.content .back{
+    height: 0.98rem;
+    line-height: 0.98rem;
+    margin: 0.7rem 0 0.7rem 0;
+    text-align: center;
+    background-color: #fff;
+}
+.content .back a{
+    padding: 0 !important;
+}

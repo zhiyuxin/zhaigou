@@ -1,0 +1,477 @@
+.content{
+    width: 100%;
+    height: 28rem;
+    /*padding-top: 1.49rem;*/
+    position: relative;
+    background-color: #f9f9f9;
+}
+.content .protop{
+    width: 100%;
+    height: 1rem;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 0.06rem;
+    position: relative;
+}
+.content .protop span{
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+    color: #FB3A03;
+    border-bottom: 0.05rem solid #FB3A03;
+    font-size: 0.28rem;
+}
+/*公用样式*/
+.content .radio {
+    text-align: center;
+    font-size: 0.3rem;
+    font-weight: bold;
+    padding: 0.34rem 0 0.41rem 0;
+    background-color: #fff;
+}
+.content .radio ul {
+    width: 100%;
+}
+.content .radio ul li {
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.content .radio ul li label {
+    padding-left: 0.5rem;
+    font-weight: normal;
+}
+input[type="radio"]:checked + label::before {
+    background-color: #F94007;
+    background-clip: content-box;
+    padding: 0.06rem;
+}
+input[type="radio"] + label::before {
+    content: "\a0";
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 10px;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #F94007;
+    text-indent: .15em;
+    line-height: 1;
+}
+
+
+.content .procenter{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-size: 0.27rem;
+}
+.content .procenter div{
+    height: 0.53rem;
+    padding: 0.4rem 0.2rem 0 0.27rem;
+}
+.content .procenter span{
+    line-height: 0.53rem;
+    font-size: 0.27rem;
+    text-align: right;
+    width: 1.50rem;
+    display: inline-block;
+}
+/*信息标题*/
+.content .procenter input[type=text]{
+    width: 5.3rem;
+    height: 0.51rem;
+    border: 0.01rem solid #979797;
+    padding-left: 0.1rem;
+}
+/*房源信息*/
+.content .procenter .msg a{
+    padding-left: 0.5rem;
+}
+.content .procenter .msg label{
+    /*padding-left: 0.2rem;*/
+    vertical-align: middle;
+}
+.content .procenter .msg img{
+    vertical-align: middle;
+}
+
+    /*所属区域*/
+.content .procenter p{
+    text-align: right;
+    position: relative;
+    top: -27px;
+    right: 12px;
+}
+.content .procenter p select{
+    height: 0.51rem;
+    width: 1.58rem;
+    background-color: transparent;
+    /*padding: 0 2% 0 2%;*/
+}
+/*房型*/
+.content .procenter .fangx select{
+    width: 1.2rem;
+    height: 0.51rem;
+    background-color: transparent;
+}
+/*楼层*/
+.content .procenter .louc input{
+    width: 1.79rem;
+}
+/*建筑面积*/
+.content .procenter .mianj input{
+    width: 1.79rem;
+}
+/*联系人*/
+.content .procenter .lianxr input{
+    /*width: 4.82rem;*/
+    /*margin-left: -0.05rem;*/
+}
+/*联系电话*/
+.content .procenter .tel input{
+    /*width: 4.82rem;*/
+}
+/*出租方式*/
+.content .procenter .chuz{
+	display: block;
+}
+.content .procenter .chuz select{
+    width: auto;
+    height: 0.51rem;
+    background-color: transparent;
+    padding: 0 2% 0 2%;
+}
+/*价格*/
+.content .procenter .jiag input{
+    width: 1.2rem;
+}
+/*付款方式*/
+.content .procenter .fuk{
+	display: block;
+}
+.content .procenter .fuk select{
+    width: auto;
+    height: 0.51rem;
+    background-color: transparent;
+    padding: 0 2% 0 2%;
+}
+
+/*付款方式*/
+.content .procenter .mode {
+	display: none;
+}
+.content .procenter .mode select{
+    width: auto;
+    height: 0.51rem;
+    background-color: transparent;
+    padding: 0 2% 0 2%;
+}
+/*装修程度*/
+.content .procenter .zxcd select{
+    width: auto;
+    height: 0.51rem;
+    background-color: transparent;
+    padding: 0 2% 0 2%;
+}
+/*房屋配置*/
+.content .procenter .fwpz{
+    height: 3rem;
+}
+.content .procenter .fwpz ul {
+    width: 100%;
+}
+.content .procenter .fwpz ul li{
+    width: 18%;
+    font-size: 0.26rem;
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    position: relative;
+}
+.content .procenter .fwpz ul li input[type=checkbox]{
+    width: 0.32rem;
+    height: 0.32rem;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+}
+/*创建分组*/
+.content .procenter .cjfz{
+    padding-bottom: 0.95rem;
+}
+.content .procenter .cjfz select{
+    width: auto;
+    height: 0.51rem;
+    background-color: transparent;
+    padding: 0 2% 0 2%;
+}
+/*上传全景图片*/
+.content .procenter .qjimg{
+    width: 96%;
+    height: 4.65rem;
+    margin: 0 2% 0 2%;
+    padding: 0!important;
+    border: 0.01rem solid #979797;
+    position: relative;
+}
+.content .procenter .qjimg ul:nth-child(1){
+    text-align: center;
+    overflow: hidden;
+    height: 3.55rem;
+    background: url("../img/relpro/relprobgc.jpg")no-repeat;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-position-y: 0.01rem;
+    padding-top: 1.5%;
+}
+.content .procenter .qjimg ul:nth-child(1) li{
+    display: inline-block;
+    width: 3.43rem;
+    height: 1.71rem;
+    padding-left: 1%;
+    position: relative;
+}
+.content .procenter .qjimg ul:nth-child(1) li img{
+    width: 100%;
+    height: 100%;
+}
+.content .procenter .qjimg ul li button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    border: 0;
+    border-radius: 0.5rem;
+    background: transparent;
+    width: 0.5rem;
+    height: 0.5rem;
+    font-size: 0.4rem;
+    color: red;
+}
+.content .procenter .qjimg ul:nth-child(2){
+    text-align: center;
+}
+.content .procenter .qjimg ul:nth-child(2) li{
+    display: inline-block;
+    margin: 0.15rem 0 0 0.35rem;
+}
+.content .procenter .qjimg ul:nth-child(2) li a{
+    color: #fff;
+    font-size: 0.27rem;
+}
+.content .procenter .qjimg ul:nth-child(2) li:nth-child(1){
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    background-color: #FF5500;
+    padding: 0.12rem 0.22rem;;
+    font-size: 0.28rem;
+}
+.content .procenter .qjimg ul:nth-child(2) li:nth-child(1) div{
+    padding: 0.09rem 0 0.19rem 0;
+    height: auto!important;
+    display: inline;
+}
+.content .procenter .qjimg ul:nth-child(2) li:nth-child(1) .file{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    outline: none;
+    background-color: transparent;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+.content .procenter .qjimg ul:nth-child(2) li:nth-child(2){
+    padding: 0.12rem 0.22rem;
+    background-color: #1695FF;
+    position: relative;
+    top: -0.2rem;
+}
+.content .procenter .agree{
+    text-align: center;
+    padding-bottom: 0.76rem;
+}
+.content .procenter .agree input{
+    width: 0.32rem;
+    height: 0.32rem;
+    vertical-align: middle;
+    margin-right: 0.1rem;
+}
+.content .procenter .agree a{
+    font-size: 0.27rem ;
+    color: #000;
+    vertical-align: middle;
+}
+
+.content .procenter .submit{
+    text-align: center;
+    height: auto;
+}
+.content .procenter .submit input{
+    padding: 0.17rem 0.27rem;
+    background-color: #FF3D00;
+    color: #fff;
+}
+.content .procenter .submit input.active{
+    padding: 0.17rem 0.27rem;
+    background-color: #ccc;
+    color: #fff;
+    cursor:not-allowed;
+}
+/*弹框1*/
+.mask1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+.mask1 div {
+    width: 70%;
+    height: 2.88rem;
+    margin: 1.97rem 15% 0 15%;
+    background-color: #fff;
+    z-index: 999;
+    letter-spacing: 0.02rem;
+    text-align: center;
+    position: relative;
+}
+.mask1 div .fp {
+    font-size: 0.33rem;
+    padding: 0.26rem 1rem 0.53rem 1rem;
+    position: relative;
+}
+.mask1 div img {
+    position: absolute;
+    right: 0.2rem;
+    top: 0.2rem;
+}
+.mask1 div input[type=text]{
+    width: 3.89rem;
+    height: 0.59rem;
+    border: 0.01rem solid #979797;
+    padding-left: 0.1rem;
+    font-size: 0.3rem;
+}
+.mask1 div button {
+    width: 1.2rem;
+    height: 0.52rem;
+    font-size: 0.33rem;
+    background-color: #0084FF;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 0.26rem;
+}
+/*弹框2*/
+.mask2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+}
+.mask2 .top {
+    width: 100%;
+    height: 0.73rem;
+    margin-bottom: 0.43rem;
+    background: rgba(255, 255, 255, 0.8);
+}
+.mask2 .top div {
+    display: inline-block;
+}
+.mask2 .top .left {
+    text-align: center;
+    width: auto;
+    height: 0.33rem;
+    margin: 0.35rem 0 0 0.47rem;
+    font-size: 0.28rem;
+}
+.mask2 .img{
+    width: 100%;
+    height: 6.12rem;
+}
+.mask2 .img ul {
+    width: 100%;
+    height: 100%;
+}
+.mask2 .img ul li {
+    float: left;
+    width: 42%;
+    height: 2.56rem;
+    text-align: center;
+    padding: 0.1rem;
+    margin: 0.16rem;
+    background-color: #fff;
+    position: relative;
+}
+.mask2 .img ul li .checkbox {
+    position: absolute;
+    left: 0.2rem;
+    top: 0.2rem;
+    z-index: 99;
+}
+.mask2 .img ul li img {
+    width: 3.1rem;
+    height: 1.68rem;
+}
+.mask2 .img ul li .left {
+    float: left;
+    /* margin-left: 0.24rem; */
+    line-height: 0.88rem;
+    font-size: 0.28rem;
+}
+.mask2 .img ul li .right {
+    float: right;
+    margin-left: 0.3rem;
+    line-height: 0.88rem;
+    color: #8c8a8a;
+    font-size: 0.28rem;
+}
+.mask2 .center .listhand {
+    width: 98%;
+    height: 2.72rem;
+    /*background-color: #fff;*/
+    text-align: center;
+    padding: 1.06rem 0.15rem 0.77rem 0.15rem;
+}
+.mask2 .center .listhand .button {
+    display: block;
+    font-size: 0.28rem;
+    color: #fff;
+    width: 98%;
+    height: 0.89rem;
+    line-height: 1rem;
+    background-color: #4185EA;
+}
+/*弹框2*/
+.mask3 {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9;
+}
+.mask3 .bgc{
+    display: block;
+    width: 3.43rem;
+    height: 1.71rem;
+    padding: 5rem 2rem 5rem 2rem;
+    background: url("../img/relpro/loading.gif")no-repeat center;
+}

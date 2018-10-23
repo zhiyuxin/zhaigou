@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>数据中心</title>
+</head>
+<body>
+<input type="checkbox" name="" class="quan" value="" />全选
+<input type="checkbox" name="" class="dan" value="" />单选
+<input type="checkbox" name="" class="dan" value="" />单选
+<input type="checkbox" name="" class="dan" value="" />单选
+<input type="checkbox" name="" class="dan" value="" />单选
+<input type="checkbox" name="" class="quan" value="" />全选
+</body>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    var $checke_q = $(".quan"); //全选按钮
+    var $checke_d = $(".dan"); //单选按钮
+
+    $checke_q.click(function() {
+        var that = this;
+        $checke_d.each(function() { //所有的单选按钮跟随选中的多选按钮变化
+            this.checked = that.checked;
+        })
+        $checke_q.each(function(){  //所有的多选按钮跟随选中的多选按钮变化
+            this.checked=that.checked;
+        })
+    })
+    $checke_d.change(function() {
+        let count = 0; //单选 按钮 个数
+        $checke_d.each(function() {
+            if(this.checked) {
+                count ++;
+            }
+        })
+        if(count == $checke_d.length) {   //当count等于单选按钮的个数时 说明单选按钮全部选中了，此时多选按钮也该被选中
+            $checke_q.each(function() {
+                this.checked = true;
+            })
+        } else {
+            $checke_q.each(function() {
+                this.checked = false;
+            })
+        }
+    })
+</script>
+</html>

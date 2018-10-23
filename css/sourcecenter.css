@@ -1,0 +1,254 @@
+.content{
+    width: 100%;
+    height: 15.34rem;
+    /*padding-top: 1.49rem;*/
+    position: relative;
+    background-color: #F9F9F9;
+}
+.content .top{
+    width: 100%;
+    height: 0.73rem;
+    background-color: #fff;
+}
+.content .top ul{
+    width: 100%;
+    height: 100%;
+}
+.content .top ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin-top: 0.38rem;
+    font-size: 0.28rem;
+}
+.activeem{
+    width: 1.29rem;
+    color: #4384EA;
+    border-bottom: 0.03rem solid #4384EA;
+
+}
+
+.content .up{
+    display: inline-block;
+    position: relative;
+    margin: 0.29rem 0.22rem;
+    overflow: hidden;
+    color: #fff;
+    background-color: #FF5500;
+    padding: 0.08rem 0.22rem;
+    font-size: 0.28rem;
+}
+/*.content .up .btn{*/
+    /*background-color: transparent;*/
+    /*color: #fff;*/
+/*}*/
+.content .del{
+    display: inline-block;
+    position: absolute;
+    left: 4.42rem;
+    top: 1.1rem;
+    font-size: 0.26rem;
+}
+.content .del .checkboxup{
+    vertical-align: middle;
+    padding-left: 0.19rem;
+}
+.content .del .buttonup{
+    color: #fff;
+    background-color: #FF5500;
+    padding: 0.08rem 0.22rem;
+    font-size: 0.28rem;
+    position: absolute;
+    left: 1.68rem;
+    top: -0.08rem;
+}
+.content .up .file{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+}
+/*公用样式——input大小*/
+input[type=checkbox]{
+    zoom: 100%;
+}
+/*视频素材*/
+.content .ship{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.content .video ul{
+    width: 100%;
+    height: 100%;
+}
+.content .video ul li{
+    float: left;
+    width: 42%;
+    height: 2.56rem;
+    text-align: center;
+    padding: 0.1rem 0.1rem 0.5rem 0.1rem;
+    margin-left: 0.2rem;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+.content .video ul li .checkbox{
+    position: absolute;
+    left: 0.3rem;
+    top: 0.2rem;
+    z-index: 9;
+}
+.content .video ul li video{
+    width: 3rem;
+    background: url("../img/sourcecenter/play.png")no-repeat center;
+    background-size: 20%;
+    background-color: #000;
+}
+.content .video ul li .left{
+    float: left;
+    /*margin-left:0.24rem;*/
+    line-height: 0.88rem;
+    font-size: 0.28rem;
+}
+.content .video ul li .right{
+    float: right;
+    margin-left:0.24rem;
+    line-height: 0.88rem;
+    color: #8c8a8a;
+    font-size: 0.28rem;
+}
+
+/*图片素材*/
+.content .tupi{
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+.content .img ul{
+    width: 100%;
+    height: 100%;
+}
+.content .img ul li{
+    float: left;
+    width: 42%;
+    height: 2.56rem;
+    text-align: center;
+    padding: 0.1rem;
+    margin: 0.2rem;
+    background-color: #fff;
+    position: relative;
+}
+.content .img ul li .checkbox{
+    position: absolute;
+    left: 0.2rem;
+    top: 0.2rem;
+    z-index: 99;
+}
+.content .img ul li img{
+    width: 3.1rem;
+    height: 1.68rem;
+}
+.content .img ul li .left{
+    float: left;
+    /*margin-left:0.24rem;*/
+    line-height: 0.88rem;
+    font-size: 0.28rem;
+}
+.content .img ul li .right{
+    float: right;
+    margin-left:0.3rem;
+    line-height: 0.88rem;
+    color: #8c8a8a;
+    font-size: 0.28rem;
+}
+/*音频素材*/
+.content .yinp{
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+.content .audio ul{
+    width: 100%;
+    height: 100%;
+}
+.content .audio ul li{
+    width: 96%;
+    height: 0.88rem;
+    padding: 0 2% 0 2%;
+    margin-top: 0.18rem;
+    background-color: #fff;
+    position: relative;
+}
+.content .audio ul li .checkbox{
+    position: absolute;
+    left: 0.2rem;
+    top: 0.32rem;
+    z-index: 9;
+}
+.content .audio ul li img{
+    width: 0.44rem;
+    height: 0.35rem;
+    float: left;
+    margin: 0.26rem 0 0 0.7rem;
+
+}
+.content .audio ul li .left{
+    float: left;
+    margin-left:0.37rem;
+    line-height: 0.88rem;
+    font-size: 0.28rem;
+}
+.content .audio ul li .right{
+    float: right;
+    margin-left:0.3rem;
+    line-height: 0.88rem;
+    color: #8c8a8a;
+    font-size: 0.28rem;
+}
+/*全景图片*/
+.content .quanji{
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+.content .panimg ul{
+    width: 100%;
+    height: 100%;
+}
+.content .panimg ul li{
+    float: left;
+    width: 42%;
+    height: 2.56rem;
+    text-align: center;
+    padding: 0.1rem;
+    margin: 0.2rem;
+    background-color: #fff;
+    position: relative;
+}
+.content .panimg ul li .checkbox{
+    position: absolute;
+    left: 0.2rem;
+    top: 0.2rem;
+    z-index: 99;
+}
+.content .panimg ul li img{
+    width: 3.1rem;
+    height: 1.68rem;
+}
+.content .panimg ul li .left{
+    float: left;
+    /*margin-left:0.24rem;*/
+    line-height: 0.88rem;
+    font-size: 0.28rem;
+}
+.content .panimg ul li .right{
+    float: right;
+    margin-left:0.3rem;
+    line-height: 0.88rem;
+    color: #8c8a8a;
+    font-size: 0.28rem;
+}

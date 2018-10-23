@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>登陆</title>
+    <link rel="stylesheet" href="../css/comm/reset.css">
+    <link rel="stylesheet" href="../css/comm/comm.css">
+    <link rel="stylesheet" href="../css/loginreg/login.css">
+</head>
+<body>
+    <div class="content">
+        <div class="mask">
+            <div class="log"></div>
+            <form action="../myshop.html" method=""onsubmit="return false"><!--onsubmit="return false-->
+                <div class="login_form">
+                    <div class="login_row" id="name">
+                        <label><img src="../img/loginreg/user.png" alt=""></label>
+                        <input type="text" id="tel" class="login_input name" placeholder="请输入手机号码">
+                    </div>
+                    <div class="login_row" id="password">
+                        <label><img src="../img/loginreg/pass.png" alt=""></label>
+                        <input type="password" id="pwd" class="login_input pass" placeholder="请输入密码">
+                    </div>
+
+                    <!--<button type="button" class="login_submit" id="login">登陆</button>-->
+                    <input type="submit" id="submit" class="login_submit" value="提交">
+                    <p class="more"><a href="findpwd.html">忘记密码</a></p>
+                    <hr />
+                    <p class="login"><a href="register.html">您还没有账号？前往注册</a></p>
+                </div>
+            </form>
+
+        </div>
+        <div id="mask1">
+            <div>
+                <p id="tips"></p>
+                <hr />
+                <button id="btn">确定</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/login.js"></script>
+
+</body>
+</html>

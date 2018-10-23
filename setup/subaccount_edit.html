@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>编辑子账户</title>
+    <link rel="stylesheet" href="../css/comm/reset.css">
+    <link rel="stylesheet" href="../css/comm/comm.css">
+    <link rel="stylesheet" href="../css/setup/subaccount_edit.css">
+</head>
+<body>
+<div class="content">
+    <form action="">
+        <!--子账户名称-->
+        <div class="subaccountname comm">子账户名称<input type="text" class="name" value="闪展云互联网科技"/></div>
+        <!--项目数量-->
+        <div class="pronum comm">项目数量<input type="text" class="num" value="20"/></div>
+        <!--密码-->
+        <div class="pwd comm">密码<input type="password" class="password" value="123456"/></div>
+        <!--删除地址-->
+        <div class="deladdr comm">
+            <a href="#" class="del">
+                <img src="../img/setup/del_red.png" alt="">
+                <label for="">删除地址</label>
+            </a>
+        </div>
+    </form>
+    <input type="submit" class="submit" id="submit" value="保存">
+    <div id="mask1">
+        <div>
+            <p class="fp">信息</p>
+            <img src="../img/mypro/confirmcol.png" id="close" alt="">
+            <hr>
+            <p class="ask">你确认要删除该信息吗？</p>
+            <button id="btn">确定</button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/main.js"></script>
+<!--<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>-->
+
+<script>
+    window.onload = function () {
+        var content = document.getElementsByClassName('content')[0];
+        var del = document.getElementsByClassName('del')[0];
+        var mask1 = document.getElementById('mask1');
+        var close = document.getElementById('close');
+
+        del.onclick = function () {
+            mask1.style.display = 'block';
+        };
+        close.onclick = function(){
+            mask1.style.display = 'none';
+        };
+        btn.onclick = function () {
+            mask1.style.display = 'none';
+            content.remove();
+            location.href = 'subaccount.html';
+        };
+
+    };
+</script>
+</body>
+</html>

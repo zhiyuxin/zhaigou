@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>发布项目</title>
+    <link rel="stylesheet" href="css/comm/reset.css">
+    <link rel="stylesheet" href="css/comm/comm.css">
+    <link rel="stylesheet" href="css/relpro.css">
+    <script type="text/javascript" src="js/area.js"></script>
+    <script type="text/javascript">
+        var Gid  = document.getElementById ;
+        var showArea = function(){
+            Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +
+                Gid('s_city').value + " - 县/区" +
+                Gid('s_county').value + "</h3>"
+        }
+        Gid('s_county').setAttribute('onchange','showArea()');
+    </script>
+</head>
+<body>
+<div class="content">
+    <div class="protop">
+        <span>添加房源</span>
+    </div>
+    <form action="" method="" onsubmit="return false">
+		<div class="radio" id="radio">
+            <ul>
+                <li class="active" id="radiol">
+                    <input type="radio" id="female" name="sex" checked="">
+                    <label for="female">出租</label>
+                </li>
+                <li class="" id="radios">
+                	<input type="radio" id="male" name="sex">
+                    <label for="male">出售</label>
+                </li>
+            </ul>
+        </div>
+        <div class="procenter">
+            <div class="title">
+                <span>信息标题：</span>
+                <input type="text" maxlength="30">
+            </div>
+            
+            <div class="add">
+                <span>所属区域：</span>
+                    <p>
+                        <select id="s_province" name="s_province"></select>&nbsp;&nbsp;
+                        <select id="s_city" name="s_city" ></select>&nbsp;&nbsp;
+                        <select id="s_county" name="s_county"></select>
+                    </p>
+                    <p id="show"></p>
+            </div>
+            <div class="adddet">
+                <span>详细地址：</span>
+                <input type="text" maxlength="30">
+            </div>
+            <div class="fangx">
+                <span>房型：</span>
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">一</option>
+                    <option value="">二</option>
+                    <option value="">三</option>
+                    <option value="">四</option>
+                    <option value="">五</option>
+                </select>&nbsp;&nbsp;室&nbsp;
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">一</option>
+                    <option value="">二</option>
+                    <option value="">三</option>
+                    <option value="">四</option>
+                    <option value="">五</option>
+                </select>&nbsp;&nbsp;厅&nbsp;
+                <select name="" id="">
+                    <option value=""></option>
+                    <option value="">一</option>
+                    <option value="">二</option>
+                    <option value="">三</option>
+                    <option value="">四</option>
+                    <option value="">五</option>
+                </select>&nbsp;&nbsp;卫
+            </div>
+            <div class="louc">
+                <span>楼层：</span>
+                <input type="text" maxlength="30">&nbsp;&nbsp;层&nbsp;&nbsp;
+                共&nbsp;&nbsp;<input type="text" maxlength="30">&nbsp;&nbsp;层
+            </div>
+            <div class="mianj">
+                <span>建筑面积：</span>
+                <input type="text" maxlength="30">&nbsp;&nbsp;米²
+            </div>
+            <div class="lianxr">
+                <span>联系人：</span>
+                <input type="text" maxlength="30">
+            </div>
+            <div class="tel">
+                <span>联系电话：</span>
+                <input type="text" maxlength="30">
+            </div>
+            <div class="chuz">
+                <span>出租方式： </span>
+                <select name="" id="">
+                    <option value="">请选择</option>
+                    <option value="">整租</option>
+                    <option value="">合租</option>
+                </select>
+            </div>
+            <div class="jiag">
+                <span>价格： </span>
+                <input type="text" maxlength="30">&nbsp;&nbsp;元
+            </div>
+            <div class="fuk">
+                <span>付款方式： </span>
+                <select name="" id="">
+                    <option value="">请选择</option>
+                    <option value="">面议</option>
+                    <option value="">押一付三</option>
+                    <option value="">季付</option>
+                    <option value="">半年付</option>
+                    <option value="">年付</option>
+                </select>
+            </div>
+            <div class="mode">
+            	<span>付款方式： </span>
+                <select name="" id="">
+                    <option value="">请选择</option>
+                    <option value="">面议</option>
+                </select>
+            </div>
+            <div class="zxcd">
+                <span>装修程度： </span>
+                <select name="" id="">
+                    <option value="">请选择</option>
+                    <option value="">毛坯</option>
+                    <option value="">简单装修</option>
+                    <option value="">中档装修</option>
+                    <option value="">豪华装修</option>
+                </select>
+            </div>
+            <div class="fwpz">
+                <ul>
+                    <span>房屋配置：</span>
+                    <li><input type="checkbox" id="ds"><label for="ds">电视</label></li>
+                    <li><input type="checkbox" id="kt"><label for="kt">空调</label></li>
+                    <li><input type="checkbox" id="bx"><label for="bx">冰箱</label></li>
+                    <li><input type="checkbox" id="xyj"><label for="xyj">洗衣机</label></li>
+                    <li><input type="checkbox" id="kd"><label for="kd">宽带</label></li>
+                    <li><input type="checkbox" id="dz"><label for="dz">地砖</label></li>
+                    <li><input type="checkbox" id="c"><label for="c">床</label></li>
+                    <li><input type="checkbox" id="rsq"><label for="rsq">热水器</label></li>
+                    <li><input type="checkbox" id="mdb"><label for="mdb">木地板</label></li>
+                    <li><input type="checkbox" id="snd"><label for="snd">水泥地</label></li>
+                    <li><input type="checkbox" id="dt"><label for="dt">地毯</label></li>
+                    <li><input type="checkbox" id="yg"><label for="yg">衣柜</label></li>
+                    <li><input type="checkbox" id="yyj"><label for="yyj">油烟机</label></li>
+                    <li><input type="checkbox" id="cj"><label for="cj">茶几</label></li>
+                    <li><input type="checkbox" id="rqz"><label for="rqz">燃气灶</label></li>
+                    <li><input type="checkbox" id="sf"><label for="sf">沙发</label></li>
+                    <li><input type="checkbox" id="cz"><label for="cz">餐桌</label></li>
+                </ul>
+            </div>
+            <div class="cjfz">
+                <span>创建分组：</span>
+                <select name="" class="group">
+                    <option value="">默认分组</option>
+                    <option value="">示例</option>
+                    <option value="自定义">自定义</option>
+                </select>
+            </div>
+            <div class="qjimg">
+                <ul class="img_div"></ul>
+                <ul>
+                    <li>
+                        <div class="up">
+                            <!--<input type="file" class="file">本地上传全景图-->
+                            <input type="file" name="myFile" class="file" id="myFile" accept="image/*"/>本地上传全景图
+                        </div>
+                    </li>
+                    <li><a href="relpro.html#choiceqj" id="choiceqj">素材库选择全景图</a></li>
+                </ul>
+            </div>
+            <div class="agree">
+                <input type="checkbox"><a href="#">我已阅读《使用协议》</a>
+            </div>
+            <div class="submit">
+                <input type="submit" class="submit" value="确定发布">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="mask1">
+    <div>
+        <p class="fp">创建分组</p>
+        <img src="img/mypro/confirmcol.png" alt="" class="close">
+        <input type="text"><br>
+        <button class="btn">确定</button>
+    </div>
+</div>
+<div class="mask2" id="mask2">
+    <div class="top">
+        <div class="left">素材库选择</div>
+    </div>
+    <div class="center">
+        <form action="relpro.html">
+            <div class="img">
+                <ul>
+                    <li>
+                        <input type="checkbox" class="checkbox" name="check" style="zoom:150%;">
+                        <img src="img/sourcecenter/datacenterimg.jpg" id="img1" alt="">
+                        <span class="left">数字成都1</span>
+                        <span class="right">2018-05-15</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="checkbox" name="check" style="zoom:150%;">
+                        <img src="img/sourcecenter/datacenterimg.jpg" id="img2" alt="">
+                        <span class="left">数字成都2</span>
+                        <span class="right">2018-05-15</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="checkbox" name="check" style="zoom:150%;">
+                        <img src="img/sourcecenter/datacenterimg.jpg" id="img3" alt="">
+                        <span class="left">数字成都3</span>
+                        <span class="right">2018-05-15</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" class="checkbox" name="check" style="zoom:150%;">
+                        <img src="img/sourcecenter/datacenterimg.jpg" id="img4" alt="">
+                        <span class="left">数字成都4</span>
+                        <span class="right">2018-05-15</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="listhand">
+                <input type="button" id="confirm" class="button" value="确定">
+            </div>
+        </form>
+
+    </div>
+</div>
+<div class="mask3"><span class="bgc"></span></div>
+<div class="foot">
+    <ul>
+        <li><a href="myshop.html"><img src="img/icon/home.png" alt=""><span>我的微店</span></a></li>
+        <li><a href="mypro.html"><img src="img/icon/project.png" alt=""><span>我的项目</span></a></li>
+        <li><a href="relpro.html"><img src="img/icon/footimg01_c.png" alt=""></a></li>
+        <li><a href="sourcecenter.html"><img src="img/icon/data.png" alt=""><span>素材中心</span></a></li>
+        <li><a href="percenter.html"><img src="img/icon/center.png" alt=""><span>个人中心</span></a></li>
+    </ul>
+</div>
+
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/relpro.js"></script>
+<script type="text/javascript">_init_area();</script>
+<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
+
+</body>
+</html>
